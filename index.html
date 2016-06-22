@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Periodic Table of Videos</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div id="player-modal-bg"></div>
+        <div id="player-modal">
+            <div id="player"></div>
+        </div>
+        <div id="details"></div>
+        <table id="periodic-table">
+            <tr id="period-1">
+                <td id="h">
+                H
+                </td>
+                <td colspan="16" class="blank"></td>
+                <td id="he">
+                He
+                </td>
+            </tr>
+            <tr id="period-2">
+                <td id="li">
+                Li
+                </td>
+                <td id="be">
+                Be
+                </td>
+                <td colspan="10" class="blank"></td>
+                <td id="b">
+                B
+                </td>
+                <td id="c">
+                C
+                </td>
+                <td id="n">
+                N
+                </td>
+                <td id="o">
+                O
+                </td>
+                <td id="f">
+                F
+                </td>
+                <td id="ne">
+                Ne
+                </td>
+            </tr>
+            <tr id="period-3">
+                <td id="na">
+                Na
+                </td>
+                <td id="mg">
+                Mg
+                </td>
+                <td colspan="10" class="blank"></td>
+                <td id="al">
+                Al
+                </td>
+                <td id="si">
+                Si
+                </td>
+                <td id="p">
+                P
+                </td>
+                <td id="s">
+                S
+                </td>
+                <td id="cl">
+                Cl
+                </td>
+                <td id="ar">
+                Ar
+                </td>
+            </tr>
+            <tr id="period-4">
+                <td id="k">
+                K
+                </td>
+                <td id="ca">
+                Ca
+                </td>
+                <td id="sc">
+                Sc
+                </td>
+                <td id="ti">
+                Ti
+                </td>
+                <td id="v">
+                V
+                </td>
+                <td id="cr">
+                Cr
+                </td>
+                <td id="mn">
+                Mn
+                </td>
+                <td id="fe">
+                Fe
+                </td>
+                <td id="co">
+                Co
+                </td>
+                <td id="ni">
+                Ni
+                </td>
+                <td id="cu">
+                Cu
+                </td>
+                <td id="zn">
+                Zn
+                </td>
+                <td id="ga">
+                Ga
+                </td>
+                <td id="ge">
+                Ge
+                </td>
+                <td id="as">
+                As
+                </td>
+                <td id="se">
+                Se
+                </td>
+                <td id="br">
+                Br
+                </td>
+                <td id="kr">
+                Kr
+                </td>
+            </tr>
+            <tr id="period-5">
+                <td id="rb">
+                Rb
+                </td>
+                <td id="sr">
+                Sr
+                </td>
+                <td id="y">
+                Y
+                </td>
+                <td id="zr">
+                Zr
+                </td>
+                <td id="nb">
+                Nb
+                </td>
+                <td id="mo">
+                Mo
+                </td>
+                <td id="tc">
+                Tc
+                </td>
+                <td id="ru">
+                Ru
+                </td>
+                <td id="rh">
+                Rh
+                </td>
+                <td id="pd">
+                Pd
+                </td>
+                <td id="ag">
+                Ag
+                </td>
+                <td id="cd">
+                Cd
+                </td>
+                <td id="in">
+                In
+                </td>
+                <td id="sn">
+                Sn
+                </td>
+                <td id="sb">
+                Sb
+                </td>
+                <td id="te">
+                Te
+                </td>
+                <td id="i">
+                I
+                </td>
+                <td id="xe">
+                Xe
+                </td>
+            </tr>
+            <tr id="period-6">
+                <td id="cs">
+                Cs
+                </td>
+                <td id="ba">
+                Ba
+                </td>
+                <td id="lu">
+                Lu
+                </lu>
+                <td id="hf">
+                Hf
+                </td>
+                <td id="ta">
+                Ta
+                </td>
+                <td id="w">
+                W
+                </td>
+                <td id="re">
+                Re
+                </td>
+                <td id="os">
+                Os
+                </td>
+                <td id="ir">
+                Ir
+                </td>
+                <td id="pt">
+                Pt
+                </td>
+                <td id="au">
+                Au
+                </td>
+                <td id="hg">
+                Hg
+                </td>
+                <td id="tl">
+                Tl
+                </td>
+                <td id="pb">
+                Pb
+                </td>
+                <td id="bi">
+                Bi
+                </td>
+                <td id="po">
+                Po
+                </td>
+                <td id="at">
+                At
+                </td>
+                <td id="rn">
+                Rn
+                </td>
+            </tr>
+            <tr id="period-7">
+                <td id="fr">
+                Fr
+                </td>
+                <td id="ra">
+                Ra
+                </td>
+                <td id="lr">
+                Lr
+                </td>
+                <td id="rf">
+                Rf
+                </td>
+                <td id="db">
+                Db
+                </td>
+                <td id="sg">
+                Sg
+                </td>
+                <td id="bh">
+                Bh
+                </td>
+                <td id="hs">
+                Hs
+                </td>
+                <td id="mt">
+                Mt
+                </td>
+                <td id="ds">
+                Ds
+                </td>
+                <td id="rg">
+                Rg
+                </td>
+                <td id="cn">
+                Cn
+                </td>
+                <td id="uut">
+                Uut
+                </td>
+                <td id="fl">
+                Fl
+                </td>
+                <td id="uup">
+                Uup
+                </td>
+                <td id="lv">
+                Lv
+                </td>
+                <td id="uus">
+                Uus
+                </td>
+                <td id="uuo">
+                Uuo
+                </td>
+            </tr>
+            <tr id="lanthanides">
+                <td colspan="2" class="blank"></td>
+                <td id="la">
+                La
+                </td>
+                <td id="ce">
+                Ce
+                </td>
+                <td id="pr">
+                Pr
+                </td>
+                <td id="nd">
+                Nd
+                </td>
+                <td id="pm">
+                Pm
+                </td>
+                <td id="sm">
+                Sm
+                </td>
+                <td id="eu">
+                Eu
+                </td>
+                <td id="gd">
+                Gd
+                </td>
+                <td id="tb">
+                Tb
+                </td>
+                <td id="dy">
+                Dy
+                </td>
+                <td id="ho">
+                Ho
+                </td>
+                <td id="er">
+                Er
+                </td>
+                <td id="tm">
+                Tm
+                </td>
+                <td id="yb">
+                Yb
+                </td>
+            </tr>
+            <tr id="actinides">
+                <td colspan="2" class="blank"></td>
+                <td id="ac">
+                Ac
+                </td>
+                <td id="th">
+                Th
+                </td>
+                <td id="pa">
+                Pa
+                </td>
+                <td id="u">
+                U
+                </td>
+                <td id="np">
+                Np
+                </td>
+                <td id="pu">
+                Pu
+                </td>
+                <td id="am">
+                Am
+                </td>
+                <td id="cm">
+                Cm
+                </td>
+                <td id="bk">
+                Bk
+                </td>
+                <td id="cf">
+                Cf
+                </td>
+                <td id="es">
+                Es
+                </td>
+                <td id="fm">
+                Fm
+                </td>
+                <td id="md">
+                Md
+                </td>
+                <td id="no">
+                No
+                </td>
+            </tr>
+        </table>
+        <footer>
+            <p>Element data cc-by-sa 3.0 Bowserinator // videos &copy; Brady Haran</p>
+        </footer>
+    </body>
+</html>

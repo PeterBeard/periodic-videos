@@ -1,0 +1,178 @@
+@import url('reset.css');
+
+body {
+    background: #212121 none;
+    color: #fff;
+    font: 18px/22px 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+a:link, a:active, a:visited, a:hover {
+    color: #66f;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#player-modal-bg {
+    background: rgba(0,0,0,0.7) none;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+#player-modal {
+    background: #fff none;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1280px;
+    height: 720px;
+    margin-top: -360px;
+    margin-left: -640px;
+    z-index: 1000;
+}
+
+#details {
+    position: absolute;
+    width: 680px;
+    height: 260px;
+    padding: 0 10px 10px;
+    left: 50%;
+    top: 0;
+    margin-left: -495px;
+}
+#details h1 {
+    margin: 15px 0 20px;
+}
+#details p {
+    margin: 0;
+}
+#details .discovery {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75em;
+}
+#details ul {
+    color: rgba(255, 255, 255, 0.7);
+    float: left;
+    list-style: none;
+    margin-top: 1em;
+    padding: 0;
+}
+#details ul li {
+    line-height: 1.75em;
+}
+#details em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+#periodic-table {
+    margin: 0 auto;
+    width: 1260px;
+    padding-bottom: 1em;
+}
+#periodic-table tr {
+    margin: 0;
+    padding: 0;
+}
+#lanthanides, #actinides {
+    position: relative;
+    top: 1em;
+}
+#periodic-table td {
+    background: #333 none;
+    margin: 0;
+    padding: 0;
+    min-width: 70px;
+    max-width: 70px;
+    height: 90px;
+    overflow: hidden;
+    text-align: center;
+
+    position:relative;
+    top: 0;
+    transition: top 0.1s;
+}
+#periodic-table td:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    background: #fff none;
+    color: #212121;
+    cursor: pointer;
+
+    position: relative;
+    top: -10px;
+    z-index: 998;
+}
+#periodic-table td.blank {
+    background: none;
+}
+#periodic-table td.blank:hover {
+    top: 0;
+    box-shadow: none;
+    cursor: inherit;
+}
+
+.atomic-number {
+    display: block;
+}
+.symbol {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+.mass {
+    display: block;
+    font-size: 0.75em;
+}
+
+/* Colors for different categories of elements */
+#periodic-table .alkali-metal {
+    background: #f44336 none;
+}
+#periodic-table .alkaline-earth-metal {
+    background: #ff5722 none;
+}
+#periodic-table .transition-metal {
+    background: #ffc107 none;
+    color: #212121;
+}
+#periodic-table .post-transition-metal {
+    background: #ffeb3b none;
+    color: #212121;
+}
+#periodic-table .metalloid {
+    background: #8bc34a none;
+    color: #212121;
+}
+#periodic-table .polyatomic-nonmetal {
+    background: #03a9f4 none;
+    color: #212121;
+}
+#periodic-table .diatomic-nonmetal {
+    background: #2196f3 none;
+    color: #212121;
+}
+#periodic-table .noble-gas {
+    background: #3f51b5 none;
+}
+#periodic-table .actinide {
+    background: #673ab7 none;
+}
+#periodic-table .lanthanide {
+    background: #9c27b0 none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    text-align: center;
+}
